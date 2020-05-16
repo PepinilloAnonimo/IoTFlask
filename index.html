@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>APLICACION PROYECTO PATIC 2020 20</title>
+    <link rel="stylesheet" href="static/main.css" type="text/css">
+    <script type="text/javascript" src="static/main.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+  <div class="navbar" id="navbar">
+    <a href="javascript:void();" onClick="cambiarSeccion(3);" class="volver oculto" id="volver">Volver</a>
+  </div>
+    <section class="login" id="login">
+            <div class="jumbotron">
+              <h1>Inicio de sesión </h1>
+              <div class="contenedor_login">
+                <form class="form-signin">
+                  <label for="inputEmail" class="texto_login">Email</label>
+                  <input type="email" name="inputEmail" id="inputEmail" class="campo" placeholder="Email" required autofocus>
+                  <label for="inputPassword" class="texto_login">Password</label>
+                  <input type="password" name="inputPassword" id="inputPassword" class="campo" placeholder="Password" required>
+              </div>
+
+              <p class="lead"></p>
+                  <p><a class="btn btn-lg btn-success" href="javascript:void();" onClick="cambiarSeccion(3);" role="button">Iniciar sesión</a>
+            </form>
+            </div>
+          </div>
+    </section>
+  <section class="inicio oculto" id="inicio">
+      <div class="contenedor_item" href="javascript:void();" onClick="cambiarSeccion(4);">
+        <span class="item_inicio"><img class="imagen_inicio" src="static/img/user.png" style="float:left;"><p class=texto_inicio>Ir a perfil</p></span>
+      </div>
+      <div class="contenedor_item" href="javascript:void();" onClick="cambiarSeccion(5);">
+        <span class="item_inicio"><img class="imagen_inicio" src="static/img/planta.png" style="float:left;"><p class=texto_inicio>Ver plantas</p></span>
+      </div>
+      <div class="contenedor_item" href="javascript:void();" onClick="cambiarSeccion(1);">
+        <span class="item_inicio"><img class="imagen_inicio" src="static/img/salir.png" style="float:left;"><p class=texto_inicio>Cerrar sesion</p></span>
+      </div>
+  </section>
+  <section class="perfil oculto" id="perfil">
+    <img class="imagen_perfil" src="static/img/user.png">
+    <p class=texto_perfil>Fulanito</p>
+    <p class=texto_perfil>Perez Galeano</p>
+    <p class=texto_perfil>fulanito@correo.com</p>
+  </section>
+  <section class="plantas oculto" id="plantas">
+    <div class="contenedor_item_planta" href="javascript:void();" onClick="cambiarSeccion(6);">
+      <span class="item_inicio"><img class="imagen_inicio" src="static/img/planta.png" style="float:left;"><p class=texto_planta>Planta 1 <br> Perejil</p><p class="Estado texto_planta"> Optim$
+    </div>
+  </section>
+  <section class="planta oculto" id="planta">
+    <div class="contenedor_item_planta" href="javascript:void();" onClick="cambiarSeccion(6);">
+      <span class="item_inicio"><img class="imagen_inicio" src="static/img/planta.png" style="float:left;"><p class=texto_planta>Planta 1 <br> Perejil</p> <p class="Estado texto_planta"> Opti$
+    </div>
+    <div id="tablanumeros">
+      <div class="grid-container">
+          <div> <p class="tabla"></p>Fecha</div>
+          <div> <p class="tabla" id="tabla_fecha"></p>  </div>
+          <div> <p class="tabla"></p>Humedad</div>
+          <div> <p class="tabla" id="tabla_humedad"></p>  </div>
+          <div> <p class="tabla"></p>Luz solar</div>
+          <div> <p class="tabla" id="tabla_luz"></p>  </div>
+          <div> <p class="tabla"></p>Temp</div>
+          <div> <p class="tabla" id="tabla_temperatura"></p> </div>
+          <div> <p class="tabla"></p>Ambiente</div>
+          <div> <p class="tabla" id="tabla_humedadAmbiental"></p> </div>
+      </div>
+      </div>
+  </section>
+</body>
+
+</html>
